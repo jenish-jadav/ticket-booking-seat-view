@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName
 class Seat {
     @SerializedName("id")
     @Expose
-    val id: Int? = null
+    val id: Int = 0
     @SerializedName("name")
     @Expose
     val name: String? = null
@@ -24,4 +24,6 @@ class Seat {
     @SerializedName("bookedStatus")
     @Expose
     val bookedStatus: Int? = null
+
+    var isSelected: Int=0
 }
